@@ -12,7 +12,7 @@ function getQuote() {
 
 function createTweet(input) {
     var data = input[0];
-  
+    
     var dataElement = document.createElement('div');
     console.log(data);
     dataElement.innerHTML = data.content.rendered;
@@ -23,10 +23,6 @@ function createTweet(input) {
         quoteAuthor = "Unknown author";
     };
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
-
-    if (tweetText.length > 140) {
-        getQuote();
-    };
 
     if (tweetText.length > 140) {
         getQuote();
